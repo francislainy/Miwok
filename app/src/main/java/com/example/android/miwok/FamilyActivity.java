@@ -19,14 +19,19 @@ public class FamilyActivity extends AppCompatActivity {
         String[] miwokWords = new String[]{"әpә", "әṭa", "angsi", "tune", "taachi", "chalitti",
                 "teṭe", "kolliti", "ama", "paapa"};
 
+        int[] image_family = new int[]{R.drawable.family_father, R.drawable.family_mother, R.drawable.family_son,
+                R.drawable.family_daughter, R.drawable.family_older_brother, R.drawable.family_younger_brother,
+                R.drawable.family_older_sister, R.drawable.family_younger_sister,
+                R.drawable.family_grandmother, R.drawable.family_grandfather};
+
         ArrayList<Word> wordsList = new ArrayList<Word>();
 
         for(int i=0; i<defaultWords.length; i++) {
-            Word w = new Word(miwokWords[i], defaultWords[i]);
+            Word w = new Word(miwokWords[i], defaultWords[i], image_family[i]);
             wordsList.add(w);
         }
 
-        WordAdapter wordAdapter = new WordAdapter(this, wordsList);
+        WordAdapter wordAdapter = new WordAdapter(this, wordsList, R.color.category_family);
         ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(wordAdapter);
 
