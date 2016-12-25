@@ -6,18 +6,18 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class FamilyActivity extends AppCompatActivity {
+public class PhrasesActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.word_list);
 
-        String[] defaultWords = new String[]{"father", "mother", "son", "daughter", "older brother", "younger brother",
-                "older sister", "younger sister", "grandmother", "grandfather"};
+        String[] defaultWords = new String[]{"Where are you going?", "What is your name?", "My name is...", "How are you feeling?", "I’m feeling good.", "Are you coming?",
+                "Yes, I’m coming.", "I’m coming.", "Let’s go.", "Come here."};
 
-        String[] miwokWords = new String[]{"әpә", "әṭa", "angsi", "tune", "taachi", "chalitti",
-                "teṭe", "kolliti", "ama", "paapa"};
+        String[] miwokWords = new String[]{"minto wuksus", "tinnә oyaase'nә", "oyaaset...", "michәksәs?", "kuchi achit", "әәnәs'aa?",
+                "hәә’ әәnәm", "әәnәm", "yoowutis", "әnni'nem"};
 
         ArrayList<Word> wordsList = new ArrayList<Word>();
 
