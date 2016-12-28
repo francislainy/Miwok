@@ -16,8 +16,9 @@
 
     <LinearLayout
         android:id="@+id/text_container"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="88dp"
+        android:layout_weight="1"
         android:orientation="vertical"
         android:paddingLeft="16dp">
 
@@ -27,8 +28,8 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:gravity="bottom"
-            android:textColor="@android:color/white"
             android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/white"
             android:textStyle="bold"
             tools:text="lutti" />
 
@@ -38,9 +39,24 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:gravity="top"
-            android:textColor="@android:color/white"
             android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/white"
             tools:text="one" />
     </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="80dp"
+        android:layout_height="80dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/play_icon" />
+
+    </RelativeLayout>
 
 </LinearLayout>
