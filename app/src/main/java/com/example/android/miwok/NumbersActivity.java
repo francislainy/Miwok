@@ -44,6 +44,11 @@ public class NumbersActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.word_list);
 
+//        /**
+//         * Display up navigation, allowing user to get back to the activity's parent
+//         */
+//        getActionBar().setDisplayHomeAsUpEnabled(true);
+
         mAudioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
 
         String[] defaultWords = new String[]{"one", "two", "three", "four", "five", "six",
