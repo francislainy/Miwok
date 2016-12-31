@@ -13,4 +13,4 @@ public class ColorsActivity extends AppCompatActivity {
                 .replace(R.id.container, new ColorsFragment())
                 .commit();
     }
-}
+} 
